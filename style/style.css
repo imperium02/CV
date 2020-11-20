@@ -28,23 +28,47 @@ body {
         position: sticky;
         top: 10px;
     }
+
+    
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        background-color: rgb(22, 38, 73);
+    }
+
+    .photo {
+        flex: 1;
+        margin: 15px 20px 15px 40px;
+    }
+
+    .header-img {
+        width: 125px;
+        height: 150px;
+    }
 }
 
-header {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    background-color: rgb(22, 38, 73);
-}
+@media screen and (max-width: 599px) {
+    .photo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-.photo {
-    flex: 125px 150px;
-    margin: 15px 20px 15px 40px;
-}
+    .header-img {
+        height: 30vh;
+        margin: 0;
+    }
 
-.header-img {
-    width: 125px;
-    height: 150px;
+    header {
+        background-color: rgb(22, 38, 73);
+    }
+
+    .person h1 {
+        margin-bottom: 0;
+        padding-bottom: 16px;
+        padding-left: 5vw;
+    }
 }
 
 .person {
@@ -132,3 +156,17 @@ main div h2 {
 .experience-item ul li:last-child {
     padding-bottom: 15px;
 }
+
+.skills-container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+}
+
+.skills {
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+}
+
+.css {width: 80%; background-color: #2196F3;} /* Blue */
