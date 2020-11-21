@@ -21,7 +21,7 @@ body {
     }
     
     footer {
-        grid-column: 2 / 3;
+        grid-column: 1 / 3;
     }
 
     #sticky-container {
@@ -108,6 +108,7 @@ main {
 main div h2 {
     margin-top: 3px;
     border-top: 1px solid grey;
+    padding-top: 2px;
     margin-left: 1em;
     margin-right: 1.5em;
 }
@@ -160,13 +161,77 @@ main div h2 {
 .skills-container {
     width: 100%; /* Full width */
     background-color: #ddd; /* Grey background */
+    border-radius: 5px;
 }
 
 .skills {
     text-align: right; /* Right-align text */
-    padding-top: 10px; /* Add top padding */
-    padding-bottom: 10px; /* Add bottom padding */
+    font-size: small;
+    line-height: 1em;
+    padding-top: 1px; /* Add top padding */
+    padding-bottom: 2px; /* Add bottom padding */
     color: white; /* White text color */
+    height: 1em;
+    border-radius: 5px;
 }
 
-.css {width: 80%; background-color: #2196F3;} /* Blue */
+.csharp {width: 40%; background-color: #2196F3;}
+.dotnet {width: 30%; background-color: #2196F3;}
+.PLC {width: 70%; background-color: #2196F3;}
+.Python {width: 40%; background-color: #2196F3;}
+.english {width: 90%; background-color: #2196F3;}
+
+.all-skills h3 {
+    margin-bottom: 2px;
+    font-size: medium;
+}
+
+#sticky-container > * {
+    padding-left: 1em;
+}
+
+.all-skills {
+    background-color: rgb(231, 205, 180);
+    border-radius: 10px;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    padding-right: 0.5em;
+    margin-top: 5px;
+}
+
+.education h3 {
+    font-size: 1em;
+    margin-bottom: 0px;
+}
+
+.education h4 {
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.education p {
+    margin-top: 0.5em;
+}
+
+.education {
+    background-color: thistle;
+    padding-top: 1px;
+    padding-bottom: 0.5em;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.projects h2 {
+    margin-top: 1.5em;
+}
+
+footer {
+    font-size: 0.7em;
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+    border-top: 1px solid black;
+    background-color: rgb(199, 236, 199);
+    padding-bottom: 2em;
+}
