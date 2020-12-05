@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
+/* global styling */
+
 html {
     font-family: 'Noto Serif';
 }
@@ -8,6 +10,8 @@ body {
     max-width: 960px;
     margin: 2em auto;
 }
+
+/* desktop layout */
 
 @media screen and (min-width: 800px) {
     body {
@@ -28,13 +32,12 @@ body {
         position: sticky;
         top: 10px;
     }
-
-    
+ 
     header {
         display: flex;
         flex-flow: row wrap;
         align-items: center;
-        background-color:#0E2C34; /* imie */
+        background-color:#0E2C34;
     }
 
     .photo {
@@ -47,6 +50,8 @@ body {
         height: 150px;
     }
 }
+
+/* mobile layout */
 
 @media screen and (max-width: 799px) {
     .photo {
@@ -71,6 +76,8 @@ body {
     }
 }
 
+/* header styling */
+
 .person {
     flex : 4;
     color:rgb(205, 237, 218);
@@ -79,6 +86,11 @@ body {
 h1 {
     letter-spacing: 0.1em;
 }
+
+
+/* -----------------side bar info----------------------- */
+
+/* contact container styling */
 
 .contact {
     display: grid;
@@ -100,6 +112,78 @@ h1 {
     padding-left: 1em;
 }
 
+/* skills container styling */
+
+.skills-container {
+    width: 100%; 
+    background-color: #ddd; 
+    border-radius: 5px;
+}
+
+.skills {
+    text-align: right; 
+    font-size: small;
+    line-height: 1em;
+    padding-top: 1px; 
+    padding-bottom: 2px; 
+    color: white; 
+    height: 1em;
+    border-radius: 5px;
+}
+
+.csharp {width: 40%; background-color: #2b4963;}
+.dotnet {width: 30%; background-color: #2b4963;}
+.PLC {width: 70%; background-color: #2b4963;}
+.Python {width: 40%; background-color: #2b4963;}
+.english {width: 90%; background-color: #2b4963;}
+
+.all-skills h3 {
+    margin-bottom: 2px;
+    font-size: medium;
+}
+
+#sticky-container > * {
+    padding-left: 1em;
+}
+
+.all-skills {
+    background-color:#608B92; /* umiejetnosc */
+    border-radius: 10px;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    padding-right: 0.5em;
+    margin-top: 5px;
+}
+
+/* education conatiner styling */
+
+.education h3 {
+    font-size: 1em;
+    margin-bottom: 0px;
+}
+
+.education h4 {
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.education p {
+    margin-top: 0.5em;
+}
+
+.education {
+    background-color: #acb37f; /* edukacja */
+    padding-top: 1px;
+    padding-bottom: 0.5em;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+
+/* -------------------main content------------------------ */
+
 main {
     border-top: 10px solid #C9DE15; /* kreska */
     padding: 1em 1em 1em 1.5em;
@@ -112,6 +196,8 @@ main div h2 {
     margin-left: 1em;
     margin-right: 1.5em;
 }
+
+/* experience container styling */
 
 .experience-container {
     position: relative;
@@ -158,74 +244,13 @@ main div h2 {
     padding-bottom: 15px;
 }
 
-.skills-container {
-    width: 100%; /* Full width */
-    background-color: #ddd; /* Grey background */
-    border-radius: 5px;
-}
-
-.skills {
-    text-align: right; /* Right-align text */
-    font-size: small;
-    line-height: 1em;
-    padding-top: 1px; /* Add top padding */
-    padding-bottom: 2px; /* Add bottom padding */
-    color: white; /* White text color */
-    height: 1em;
-    border-radius: 5px;
-}
-
-.csharp {width: 40%; background-color: #2b4963;}
-.dotnet {width: 30%; background-color: #2b4963;}
-.PLC {width: 70%; background-color: #2b4963;}
-.Python {width: 40%; background-color: #2b4963;}
-.english {width: 90%; background-color: #2b4963;}
-
-.all-skills h3 {
-    margin-bottom: 2px;
-    font-size: medium;
-}
-
-#sticky-container > * {
-    padding-left: 1em;
-}
-
-.all-skills {
-    background-color:#608B92; /* umiejetnosc */
-    border-radius: 10px;
-    padding-top: 0.5em;
-    padding-bottom: 1em;
-    padding-right: 0.5em;
-    margin-top: 5px;
-}
-
-.education h3 {
-    font-size: 1em;
-    margin-bottom: 0px;
-}
-
-.education h4 {
-    font-style: italic;
-    font-weight: normal;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-.education p {
-    margin-top: 0.5em;
-}
-
-.education {
-    background-color: #acb37f; /* edukacja */
-    padding-top: 1px;
-    padding-bottom: 0.5em;
-    border-radius: 10px;
-    margin-top: 5px;
-}
+/* projects container styling */
 
 .projects h2 {
     margin-top: 1.5em;
 }
+
+/* footer styling */
 
 footer {
     font-size: 0.7em;
